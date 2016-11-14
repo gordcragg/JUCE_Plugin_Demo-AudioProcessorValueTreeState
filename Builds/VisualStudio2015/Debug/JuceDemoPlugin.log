@@ -1,0 +1,4 @@
+﻿  PluginEditor.cpp
+  PluginProcessor.cpp
+  juce_audio_basics.cpp
+  juce_audio_devices.cpp
