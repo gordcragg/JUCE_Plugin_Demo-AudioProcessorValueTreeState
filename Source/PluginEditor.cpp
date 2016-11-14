@@ -193,12 +193,12 @@ void JuceDemoPluginAudioProcessorEditor::setUndoRedoButtons()
 {
 	if (getProcessor().pluginState.undoManager->canUndo() && !undoButton->isEnabled())
 		undoButton->setEnabled (true);
-	if (!getProcessor().pluginState.undoManager->canUndo() && undoButton->isEnabled())
+	else if (!getProcessor().pluginState.undoManager->canUndo() && undoButton->isEnabled())
 		undoButton->setEnabled (false);
 
 	if (getProcessor().pluginState.undoManager->canRedo() && !redoButton->isEnabled())
 		redoButton->setEnabled (true);
-	if (!getProcessor().pluginState.undoManager->canRedo() && redoButton->isEnabled())
+	else if (!getProcessor().pluginState.undoManager->canRedo() && redoButton->isEnabled())
 		redoButton->setEnabled (false);
 
 }
