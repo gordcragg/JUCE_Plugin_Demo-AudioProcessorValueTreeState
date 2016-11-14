@@ -173,12 +173,15 @@ void JuceDemoPluginAudioProcessorEditor::updateTimecodeDisplay (AudioPlayHead::C
 void JuceDemoPluginAudioProcessorEditor::buttonClicked (Button* button)
 {
 	if (button == undoButton)
+	{
 		if (getProcessor().pluginState.undoManager->canUndo())
 			getProcessor().pluginState.undoManager->undo();
-
-	if (button == redoButton)
+	}
+	else if (button == redoButton)
+	{
 		if (getProcessor().pluginState.undoManager->canRedo())
 			getProcessor().pluginState.undoManager->redo();
+	}
 }
 
 // When a slider drag ends, the timer is started. 
