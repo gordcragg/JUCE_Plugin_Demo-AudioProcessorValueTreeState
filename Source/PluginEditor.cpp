@@ -208,6 +208,6 @@ void JuceDemoPluginAudioProcessorEditor::setUndoRedoButtons()
 
 
 // not being used, but pure virtual function requires overriding
-void JuceDemoPluginAudioProcessorEditor::sliderValueChanged (Slider * slider)
+void JuceDemoPluginAudioProcessorEditor::sliderValueChanged (Slider * /*slider*/)
 {
 }
